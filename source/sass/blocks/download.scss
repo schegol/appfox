@@ -1,0 +1,22 @@
+.download {
+  padding: 30px 0 181px;
+}
+
+.download__text {
+  @include reset;
+  margin-bottom: 10px;
+  color: $download-text-color;
+}
+
+.download__menu {
+  @include list-reset;
+  @include dflex(nowrap, row, space-between, flex-start);
+}
+
+.download__menu-link {
+  display: block;
+}
+
+.download__menu-img {
+  display: block;
+}

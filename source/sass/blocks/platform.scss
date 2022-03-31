@@ -1,0 +1,26 @@
+.platform {
+  position: relative;
+  padding: 30px 0 93px;
+
+  &::after {
+    @include abs-pseudo;
+    bottom: 18px;
+    left: calc(50% - 50px);
+    width: 158px;
+    height: 68px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/bg-platform-mobile@1x.png");
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-platform-mobile@2x.png");
+    }
+  }
+}
+
+.platform__text {
+  @include reset;
+}

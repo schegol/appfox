@@ -1,0 +1,10 @@
+.contact {
+  padding: 26px 0;
+}
+
+.contact__form-desc {
+  @include reset;
+  max-width: 185px;
+  margin-bottom: 15px;
+  color: $contacts-color;
+}

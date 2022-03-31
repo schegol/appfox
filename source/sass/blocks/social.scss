@@ -1,0 +1,30 @@
+.social {
+  @include list-reset;
+  @include dflex(nowrap, column, flex-start, flex-start);
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.social__image {
+  color: #fff;
+}
+
+.social__link:hover .social__image,
+.social__link:focus .social__image {
+  color: darken(#fff, 10%);
+}

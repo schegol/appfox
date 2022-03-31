@@ -1,0 +1,66 @@
+.heading {
+  @include reset;
+  margin-top: 0;
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -.03em;
+  text-transform: uppercase;
+
+  &--contact {
+    margin-bottom: 15px;
+    color: $contacts-color;
+    font-size: 13px;
+  }
+
+  &--reviews {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  &--faq {
+    max-width: 185px;
+    margin-bottom: 9px;
+    color: #000;
+  }
+
+  &--delivery {
+    max-width: 115px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  &--platform {
+    max-width: 175px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 13px;
+  }
+
+  &--online {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  &--download {
+    margin-bottom: 11px;
+    color: $download-heading-color;
+    font-size: 13px;
+  }
+}
+
+.heading__accent {
+  color: $accent-color;
+}
+
+@media (min-width: $tablet-bp) {
+  .heading {
+    max-width: 100%;
+  }
+
+  .heading br {
+    display: none;
+  }
+}

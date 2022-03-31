@@ -1,0 +1,13 @@
+.btn {
+  @include reset;
+  @include dflex(nowrap,  row, center, center);
+  padding: 11px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: $text-color-2;
+  border: none;
+  border-radius: $form-border-radius;
+  background-color: $btn-color;
+}

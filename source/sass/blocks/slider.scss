@@ -1,0 +1,90 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__controls {
+  @include dflex(nowrap, row, flex-start, flex-start);
+  margin-bottom: 10px;
+}
+
+.slider__btn {
+  @include transition(background-color);
+  display: block;
+  min-width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border-radius: 99px;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken(#fff, 15%);
+    outline: none;
+    cursor: pointer;
+  }
+
+  &--left,
+  &--right {
+    position: relative;
+
+    &::before {
+      @include abs-pseudo;
+      top: 50%;
+      width: 4px;
+      height: 4px;
+      border: 2px solid transparent;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  &--left {
+    &::before {
+      left: calc(50% + 1px);
+      border-bottom-color: #000;
+      border-left-color: #000;
+    }
+  }
+
+  &--right {
+    &::before {
+      left: calc(50% - 2px);
+      border-top-color: #000;
+      border-right-color: #000;
+    }
+  }
+
+  &--link {
+    min-width: 82px;
+  }
+}
+
+.slider__slide {
+  @include reset;
+  @include dflex(nowrap, column, flex-start, flex-start);
+}
+
+.slider__slide-text {
+  @include reset;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: $font-slider;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.slider__slide-author {
+  font-family: $font-main;
+  align-self: flex-end;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.slider .slick-track {
+  @include dflex();
+}

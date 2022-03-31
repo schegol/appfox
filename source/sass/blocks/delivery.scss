@@ -1,0 +1,28 @@
+.delivery {
+  position: relative;
+  padding: 17px 0 23px;
+  background-image: linear-gradient(180deg, $header-footer-color -182.82%, #FFCD68 -100.25%, $header-footer-color 54.78%, $header-footer-color 95.73%);
+
+  &::before {
+    @include abs-pseudo;
+    top: -110px;
+    right: calc(50% - 192px);
+    width: 126px;
+    height: 165px;
+    transform: translateX(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/bg-delivery-mobile@1x.png");
+    z-index: 2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-delivery-mobile@2x.png");
+    }
+  }
+}
+
+.delivery__text {
+  @include reset;
+  color: #fff;
+}

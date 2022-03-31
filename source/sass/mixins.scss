@@ -10,7 +10,7 @@
   list-style: none;
 }
 
-@mixin d-flex ($wrap: nowrap, $direction: row, $justify: flex-start, $align: center) {
+@mixin dflex ($wrap: nowrap, $direction: row, $justify: flex-start, $align: center) {
   display: flex;
   flex-wrap: $wrap;
   flex-direction: $direction;
@@ -24,11 +24,19 @@
 }
 
 @mixin abs-center {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
+}
+
+@mixin abs-center-x {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @mixin abs-center-y {

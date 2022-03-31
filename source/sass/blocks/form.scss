@@ -1,0 +1,46 @@
+.form {
+  @include dflex(nowrap, column, flex-start, stretch);
+}
+
+.form__input {
+  @include transition(background-color);
+  margin-bottom: 15px;
+  padding: 11px;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $form-field-color;
+  border-radius: $form-border-radius;
+  border: none;
+
+  &::placeholder {
+    color: $text-color-1;
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: darken($form-field-color, 5%);
+    outline: none;
+  }
+}
+
+.form__submit {
+  margin-bottom: 15px;
+}
+
+.form__agreement {
+  @include reset;
+  color: #565656;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__agreement-link {
+  color: #565656;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}

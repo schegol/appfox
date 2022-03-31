@@ -1,0 +1,55 @@
+.online {
+  position: relative;
+  padding: 204px 0 20px;
+  background-color: $dark-block-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-image: url("../img/bg-online-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-online-mobile@2x.png");
+  }
+
+  &::before {
+    @include abs-center-x;
+    top: -144px;
+    width: 160px;
+    height: 338px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/bg-online-app-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-online-app-mobile@2x.png");
+    }
+  }
+}
+
+.online__text  {
+  @include reset;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.online__features {
+  @include list-reset;
+  @include dflex(wrap, flex-start, space-between, flex-start);
+}
+
+.online__feature {
+  @include dflex(nowrap, column, flex-start, flex-start);
+  min-width: 63px;
+}
+
+.online__feature-value {
+  color: #fff;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.online__feature-text {
+  color: #fff;
+  line-height: 15px;
+}

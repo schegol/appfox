@@ -1,0 +1,34 @@
+.header {
+  @include dflex(nowrap, column, flex-start, stretch);
+  position: relative;
+  padding-top: 13px;
+  min-height: 311px;
+  background-image: linear-gradient(180deg, $header-footer-color -182.82%, #FFCD68 -100.25%, $header-footer-color 54.78%, $header-footer-color 95.73%);
+}
+
+.header__main-img {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__container {
+  @include dflex(nowrap, row, space-between, center);
+}
+
+.header__rows {
+  @include dflex(nowrap, column, flex-start, stretch);
+  flex-grow: 1;
+}
+
+.header__banner-row {
+  position: relative;
+  flex-grow: 1;
+}
+
+.header__social {
+  position: absolute;
+  top: 64px;
+  right: 32px;
+}
