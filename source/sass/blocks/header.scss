@@ -109,4 +109,12 @@
       outline: none;
     }
   }
+
+  .header__scroll-arrow {
+    position: relative;
+    animation-name: upAndDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
 }

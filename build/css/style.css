@@ -322,6 +322,24 @@ body {
 a {
   text-decoration: none; }
 
+@-webkit-keyframes upAndDown {
+  0% {
+    position: relative;
+    top: 0; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0; } }
+
+@keyframes upAndDown {
+  0% {
+    position: relative;
+    top: 0; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0; } }
+
 @media (min-width: 768px) {
   body {
     font-size: 14px;
@@ -554,7 +572,17 @@ a {
     z-index: 5; }
     .header__scroll-btn:hover, .header__scroll-btn:focus {
       color: #FF9C01;
-      outline: none; } }
+      outline: none; }
+  .header__scroll-arrow {
+    position: relative;
+    -webkit-animation-name: upAndDown;
+            animation-name: upAndDown;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite; } }
 
 .logo {
   display: block; }
