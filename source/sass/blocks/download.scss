@@ -21,3 +21,47 @@
 .download__menu-img {
   display: block;
 }
+
+@media (min-width: $tablet-bp) {
+  .download {
+    padding: 45px 0 33px;
+  }
+
+  .download__container {
+    position: relative;
+
+    &::before {
+      @include abs-center-y;
+      width: 160px;
+      height: 283px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/bg-download-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-download-tablet@2x.png");
+      }
+    }
+  }
+
+  .download__heading {
+    margin-left: 190px;
+  }
+
+  .download__text {
+    margin-left: 190px;
+    line-height: 150%;
+  }
+
+  .download__menu {
+    justify-content: flex-start;
+    margin-left: 190px;
+  }
+
+  .download__menu-item {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+}

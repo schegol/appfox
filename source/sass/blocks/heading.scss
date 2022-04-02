@@ -74,9 +74,47 @@
 @media (min-width: $tablet-bp) {
   .heading {
     max-width: 100%;
+    font-size: 16px;
+    line-height: 120%;
+
+    &--online {
+      margin-bottom: 16px;
+    }
+
+    &--platform {
+      margin-bottom: 15px;
+    }
+
+    &--delivery {
+      margin-bottom: 14px;
+    }
+
+    &--faq {
+      margin-bottom: 27px;
+    }
+
+    &--reviews {
+      margin-bottom: 16px;
+    }
+
+    &--contact {
+      @include dflex(nowrap, row, flex-start, center);
+      margin-bottom: 11px;
+    }
   }
 
   .heading br {
     display: none;
+  }
+
+  .heading__icon {
+    &--contact {
+      margin-left: 5px;
+      font-family: $font-icons;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 900;
+      transform: rotate(-.55deg);
+    }
   }
 }

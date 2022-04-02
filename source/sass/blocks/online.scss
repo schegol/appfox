@@ -22,7 +22,7 @@
     background-image: url("../img/bg-online-app-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-online-app-mobile@2x.png");
+      background-image: url("../img/bg-online-app-mobile@2x.png");
     }
   }
 }
@@ -52,4 +52,57 @@
 .online__feature-text {
   color: #fff;
   line-height: 15px;
+}
+
+@media (min-width: $tablet-bp) {
+  .online {
+    padding-top: 99px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    background-position: center bottom;
+    background-size: auto 400px;
+    background-image: url("../img/bg-online-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-online-tablet@2x.png");
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .online__container {
+    position: relative;
+    top: -21px;
+  }
+
+  .online__heading {
+    margin-right: 190px;
+  }
+
+  .online__text {
+    margin-right: 190px;
+    margin-bottom: 15px;
+  }
+
+  .online__features {
+    justify-content: flex-start;
+    margin-right: 190px;
+  }
+
+  .online__feature {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .online__feature-value {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .online__feature-text {
+    line-height: 16px;
+  }
 }

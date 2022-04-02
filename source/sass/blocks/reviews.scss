@@ -17,3 +17,21 @@
   color: #fff;
   font-size: 14px;
 }
+
+@media (min-width: $tablet-bp) {
+  .reviews {
+    padding: 35px 0 132px;
+    background-position: top;
+    background-size: auto 100%;
+    background-image: url("../img/bg-reviews-tablet@1x.png");
+    background-color: #fff;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-reviews-tablet@2x.png");
+    }
+  }
+
+  .reviews__desc {
+    margin-bottom: 20px;
+  }
+}

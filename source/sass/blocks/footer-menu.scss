@@ -1,12 +1,9 @@
 .footer-menu {
   @include list-reset;
-  @include dflex(wrap, row, flex-start, flex-start);
+  @include dflex(wrap, row, flex-start, center);
 }
 
 .footer-menu__item {
-  width: 24px;
-  height: 24px;
-
   &:not(:last-child) {
     margin-right: 33px;
   }
@@ -14,8 +11,8 @@
 
 .footer-menu__link {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,4 +41,32 @@
 
 .footer-menu__link-text {
   display: none;
+}
+
+@media (min-width: $tablet-bp) {
+  .footer-menu__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .footer-menu__link {
+    &--btn-show-tablet {
+      @include dflex(nowrap, row, center, center);
+      width: auto;
+      padding: 12px 25px;
+      color: $header-footer-color;
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 170%;
+      background-image: none;
+      background-color: #fff;
+      border-radius: 100px;
+    }
+  }
+
+  .footer-menu__link--btn-show-tablet .footer-menu__link-text {
+      display: inline;
+  }
 }

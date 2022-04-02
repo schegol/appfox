@@ -1,3 +1,10 @@
 .faq {
   padding: 30px 0;
 }
+
+@media (min-width: $tablet-bp) {
+  .faq {
+    margin-top: -53px;
+    padding: 41px 0 30px;
+  }
+}

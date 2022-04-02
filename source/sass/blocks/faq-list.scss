@@ -44,6 +44,7 @@
 
 .faq-list__question-text {
   @include reset;
+  display: block;
   color: $text-color-1;
   line-height: 170%;
   font-weight: 700;
@@ -65,4 +66,20 @@
 .faq-list__item .faq-list__answer {
   padding: 10px 0;
   overflow: hidden;
+}
+
+@media (min-width: $tablet-bp) {
+  .faq-list__question {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .faq-list__question-text {
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .faq-list__item .faq-list__answer {
+    padding: 10px;
+  }
 }

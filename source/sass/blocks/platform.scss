@@ -24,3 +24,21 @@
 .platform__text {
   @include reset;
 }
+
+@media (min-width: $tablet-bp) {
+  .platform {
+    padding: 41px 0 231px;
+
+    &::after {
+      bottom: 5px;
+      left: 50%;
+      width: 540px;
+      height: 231px;
+      background-image: url("../img/bg-platform-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-platform-tablet@2x.png");
+      }
+    }
+  }
+}

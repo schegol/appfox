@@ -26,3 +26,37 @@
   @include reset;
   color: #fff;
 }
+
+@media (min-width: $tablet-bp) {
+  .delivery {
+    padding: 43px 0 108px;
+    background-position: center top;
+    background-size: auto 100%;
+    background-image: url("../img/bg-delivery-rad-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-delivery-rad-tablet@2x.png");
+    }
+
+    &::before {
+      top: 28px;
+      right: calc(50% + 30px);
+      width: 160px;
+      height: 210px;
+      transform: translateX(-50%);
+      background-image: url("../img/bg-delivery-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-delivery-tablet@2x.png");
+      }
+    }
+  }
+
+  .delivery__heading {
+    margin-left: 190px;
+  }
+
+  .delivery__text {
+    margin-left: 190px;
+  }
+}

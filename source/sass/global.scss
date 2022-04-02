@@ -13,3 +13,10 @@ body {
 a {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-bp) {
+  body {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

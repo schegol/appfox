@@ -88,3 +88,13 @@
 .slider .slick-track {
   @include dflex();
 }
+
+@media (min-width: $tablet-bp) {
+  .slider__controls {
+    margin-bottom: 20px;
+  }
+
+  .slider__slide-author {
+    line-height: 21px;
+  }
+}

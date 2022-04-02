@@ -46,14 +46,18 @@
 
     <header class="header">
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-header-desktop@1x.webp 1x, img/bg-header-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-header-tablet@1x.webp 1x, img/bg-header-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/img-header-app@1x.webp 1x, img/img-header-app@2x.webp 2x">
+        <source media="(min-width: 1200px)" srcset="img/bg-header-desktop@1x.png 1x, img/bg-header-desktop@2x.png.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-header-tablet@1x.png 1x, img/bg-header-tablet@2x.png.jpg 2x">
         <img class="header__main-img" src="img/img-header-app@1x.png" srcset="img/img-header-app@2x.png 2x" alt="Превью мобильного приложения">
       </picture>
 
       <div class="header__rows">
         <div class="header__menu-row">
           <div class="header__container container">
-            <a class="header__logo logo" href="#">
+            <a class="header__logo logo logo--header" href="#">
               <img class="logo__img" src="img/logo-footer-mobile.svg" alt="Логотип сайта" width="24" height="24">
             </a>
 
@@ -138,8 +142,8 @@
             <li class="download__menu-item">
               <a class="download__menu-link" href="#" target="_blank" aria-label="Скачать приложение в App Store">
                 <picture>
-                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/img-download-apple-desktop@1x.webp 1x, img/img-download-apple-desktop@2x.webp 2x"> -->
-                  <!-- <source type="image/webp" srcset="img/img-download-apple-mobile@1x.webp 1x, img/img-download-apple-mobile@2x.webp 2x"> -->
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/img-download-apple-desktop@1x.webp 1x, img/img-download-apple-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/img-download-apple-mobile@1x.webp 1x, img/img-download-apple-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/img-download-apple-desktop@1x.png 1x, img/img-download-apple-desktop@2x.png.jpg 2x">
                   <img class="download__menu-img" src="img/img-download-apple-mobile@1x.png" srcset="img/img-download-apple-mobile@2x.png 2x" alt="Логотип App Store">
                 </picture>
@@ -156,7 +160,7 @@
           </h2>
 
           <p class="online__text">
-            Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа
+            Скачивайте приложение и создавайте свое виртуальное кафе  с&nbsp;электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с&nbsp;электронным меню, доставкой и возможностью предзаказа
           </p>
 
           <ul class="online__features">
@@ -304,7 +308,7 @@
             <input class="form__input" type="text" name="email" placeholder="E-mail">
             <button class="form__submit btn" type="submit">Отправить</button>
             <p class="form__agreement">
-              Нажимая на кнопку “Отправить” вы соглашаетесь с <a class="form__agreement-link" href="#">политикой конфиденциальности</a>
+              Нажимая на кнопку “Отправить” вы соглашаетесь с&nbsp;<a class="form__agreement-link" href="#">политикой конфиденциальности</a>
             </p>
           </form>
         </div>
@@ -313,7 +317,7 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <a class="footer__logo logo" href="#">
+        <a class="footer__logo logo logo--footer" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/logo-footer-desktop@1x.webp 1x, img/logo-footer-desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/logo-footer-desktop@1x.png 1x, img/logo-footer-desktop@2x.png 2x">

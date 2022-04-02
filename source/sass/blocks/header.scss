@@ -32,3 +32,27 @@
   top: 64px;
   right: 32px;
 }
+
+@media (min-width: $tablet-bp) {
+  .header {
+    min-height: 366px;
+    background-image: url("../img/bg-header-main-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto 493px;
+    background-position: center bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-main-tablet@2x.png");
+    }
+  }
+
+  .header__main-img {
+    top: 61px;
+    bottom: auto;
+  }
+
+  .header__social {
+    top: 100px;
+    right: 28px;
+  }
+}
