@@ -22,6 +22,11 @@
   }
 }
 
+.delivery__heading {
+  max-width: 115px;
+  margin-bottom: 13px;
+}
+
 .delivery__text {
   @include reset;
   color: #fff;
@@ -31,6 +36,7 @@
   .delivery {
     padding: 43px 0 108px;
     background-position: center top;
+    background-repeat: no-repeat;
     background-size: auto 100%;
     background-image: url("../img/bg-delivery-rad-tablet@1x.png");
 
@@ -50,13 +56,83 @@
         background-image: url("../img/bg-delivery-tablet@2x.png");
       }
     }
+
+    &::after {
+      @include abs-pseudo;
+      top: -8px;
+      right: calc(50% - 252px);
+      width: 32px;
+      height: 32px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/bg-delivery-ball-tablet@1x.png");
+      transform: translateX(-50%);
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-delivery-ball-tablet@2x.png");
+      }
+    }
   }
 
   .delivery__heading {
+    max-width: 100%;
     margin-left: 190px;
+    margin-bottom: 14px;
   }
 
   .delivery__text {
     margin-left: 190px;
   }
+}
+
+@media (min-width: $desktop-bp) {
+  .delivery {
+    box-sizing: border-box;
+    min-height: 563px;
+    padding-top: 144px;
+    background-position: center top;
+    background-size: auto 563px;
+    background-image: url("../img/bg-delivery-rad-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-delivery-rad-desktop@2x.png");
+    }
+
+    &::before {
+      top: -19px;
+      right: calc(50% - 255px);
+      width: 540px;
+      height: 709px;
+      background-image: url("../img/bg-delivery-1-desktop@1x.png");
+      z-index: 1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-delivery-1-desktop@2x.png");
+      }
+    }
+
+    &::after {
+      top: -4px;
+      right: calc(50% - 806px);
+      width: 461px;
+      height: 648px;
+      background-image: url("../img/bg-delivery-2-desktop@1x.png");
+      z-index: 2;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-delivery-2-desktop@2x.png");
+      }
+    }
+  }
+
+    .delivery__heading {
+      margin-left: 570px;
+      margin-bottom: 29px;
+    }
+
+    .delivery__text {
+      max-width: 523px;
+      margin-left: 570px;
+    }
 }

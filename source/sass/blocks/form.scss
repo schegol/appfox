@@ -44,3 +44,23 @@
     outline: none;
   }
 }
+
+@media (min-width: $desktop-bp) {
+  .form {
+    @include dflex(wrap, row, space-between, flex-start);
+    position: relative;
+  }
+
+  .form__input {
+    box-sizing: border-box;
+    flex-basis: 255px;
+  }
+
+  .form__agreement {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}

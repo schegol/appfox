@@ -33,6 +33,10 @@
   right: 32px;
 }
 
+.header__scroll-btn {
+  display: none;
+}
+
 @media (min-width: $tablet-bp) {
   .header {
     min-height: 366px;
@@ -54,5 +58,55 @@
   .header__social {
     top: 100px;
     right: 28px;
+  }
+}
+
+@media (min-width: $desktop-bp) {
+  .header {
+    min-height: 900px;
+    // height: 100vh;
+    background-image: url("../img/bg-header-main-desktop@1x.png");
+    background-size: 100% 493px;
+    background-position: center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-header-main-desktop@2x.png");
+    }
+  }
+
+  .header__main-img {
+    top: 0;
+    left: calc(50% - 11px);
+  }
+
+  .header__social {
+    top: 220px;
+  }
+
+  .header__rows {
+    position: relative;
+    z-index: 3;
+  }
+
+  .header__scroll-btn {
+    @include transition(color);
+    position: absolute;
+    top: 732px;
+    left: 50%;
+    display: block;
+    width: 90px;
+    height: 90px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 5;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      outline: none;
+    }
   }
 }

@@ -27,6 +27,10 @@
   }
 }
 
+.online__heading {
+  margin-bottom: 13px;
+}
+
 .online__text  {
   @include reset;
   margin-bottom: 10px;
@@ -79,6 +83,7 @@
 
   .online__heading {
     margin-right: 190px;
+    margin-bottom: 16px;
   }
 
   .online__text {
@@ -104,5 +109,73 @@
 
   .online__feature-text {
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-bp) {
+  .online {
+    min-height: 593px;
+    padding-top: 42px;
+    background-size: auto 593px;
+    background-image: url("../img/bg-online-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-online-desktop@2x.png");
+    }
+
+    &::after {
+      @include abs-pseudo;
+      top: 63px;
+      left: calc(50% + 11px);
+      width: 1141px;
+      height: 614px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/bg-online-balls-desktop@1x.png");
+      transform: translateX(-50%);
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-online-balls-desktop@2x.png");
+      }
+    }
+  }
+
+  .online__container {
+    position: static;
+    margin-top: 215px;
+  }
+
+  .online__heading {
+    max-width: 445px;
+    margin-right: 0;
+    margin-bottom: 19px;
+  }
+
+  .online__text {
+    max-width: 540px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .online__features {
+    max-width: 445px;
+    margin-right: 0;
+  }
+
+  .online__feature {
+    &:not(:last-child) {
+      margin-right: 49px;
+    }
+  }
+
+  .online__feature-value {
+    font-size: 37px;
+    line-height: 43px;
+  }
+
+  .online__feature-text {
+    font-size: 18px;
+    line-height: 21px;
   }
 }

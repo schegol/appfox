@@ -21,6 +21,11 @@
   }
 }
 
+.platform__heading {
+  max-width: 175px;
+  margin-bottom: 12px;
+}
+
 .platform__text {
   @include reset;
 }
@@ -40,5 +45,39 @@
         background-image: url("../img/bg-platform-tablet@2x.png");
       }
     }
+  }
+
+  .platform__heading {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-bp) {
+  .platform {
+    padding-top: 117px;
+    padding-bottom: 60px;
+
+    &::after {
+      top: 68px;
+      left: calc(50% + 237px);
+      bottom: auto;
+      width: 633px;
+      height: 271px;
+      background-image: url("../img/bg-platform-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-platform-desktop@2x.png");
+      }
+    }
+  }
+
+  .platform__heading {
+    max-width: 369px;
+    margin-bottom: 31px;
+  }
+
+  .platform__text {
+    max-width: 445px;
   }
 }

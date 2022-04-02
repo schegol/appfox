@@ -31,7 +31,58 @@
     }
   }
 
+  .reviews__heading {
+    margin-bottom: 16px;
+  }
+
   .reviews__desc {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-bp) {
+  .reviews {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 509px;
+    padding-top: 68px;
+    padding-bottom: 60px;
+    background-image: url("../img/bg-reviews-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-reviews-desktop@2x.png");
+    }
+
+    &::before {
+      @include abs-pseudo;
+      top: -54px;
+      left: calc(50% - 529px);
+      width: 1084px;
+      height: 623px;
+      transform: rotateX(-50%);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../img/bg-reviews-1-desktop@1x.png");
+      z-index: 1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-reviews-1-desktop@2x.png");
+      }
+    }
+  }
+
+  .reviews__heading {
+    max-width: 445px;
+    margin-left: 570px;
+  }
+
+  .reviews__desc {
+    max-width: 445px;
+    margin-left: 570px;
+  }
+
+  .reviews__slider {
+    margin-left: 570px;
   }
 }

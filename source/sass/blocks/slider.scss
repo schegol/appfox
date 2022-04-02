@@ -98,3 +98,18 @@
     line-height: 21px;
   }
 }
+
+@media (min-width: $desktop-bp) {
+  .slider {
+    width: 445px;
+  }
+
+  .slider__controls {
+    margin-bottom: 18px;
+  }
+
+  .slider__slide-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}

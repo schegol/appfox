@@ -17,3 +17,15 @@
     height: 43px;
   }
 }
+
+@media (min-width: $desktop-bp) {
+  .logo--header .logo__img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo--footer .logo__img {
+    width: 37px;
+    height: 42px;
+  }
+}

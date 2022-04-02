@@ -29,8 +29,35 @@
     z-index: 3;
   }
 
+  .contact__heading {
+    margin-bottom: 11px;
+  }
+
   .contact__form-desc {
     max-width: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-bp) {
+  .contact {
+    padding-top: 174px;
+    padding-bottom: 120px;
+  }
+
+  .contact__container {
+    position: static;
+    width: 1110px;
+    padding: 27px 30px 20px;
+    box-shadow: 0 4px 40px rgba(0,0,0,.1);
+    transform: none;
+  }
+
+  .contact__heading {
+    margin-bottom: 5px;
+  }
+
+  .contact__form-desc {
+    margin-bottom: 19px;
   }
 }

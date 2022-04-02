@@ -20,3 +20,9 @@
     outline: none;
   }
 }
+
+@media (min-width: $desktop-bp) {
+  .btn {
+      padding: 25px 50px;
+  }
+}

@@ -70,3 +70,53 @@
       display: inline;
   }
 }
+
+@media (min-width: $desktop-bp) {
+  .footer-menu__item {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .footer-menu__link {
+    @include transition(color);
+    width: auto;
+    padding-left: 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 170%;
+    color: #fff;
+    white-space: nowrap;
+    background-position: left center;
+
+    &--btn-hide-desktop {
+      display: none;
+    }
+
+    &--btn-show-desktop {
+      @include dflex(nowrap, row, center, center);
+      width: auto;
+      padding: 12px 25px;
+      color: $header-footer-color;
+      white-space: nowrap;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 170%;
+      background-image: none;
+      background-color: #fff;
+      border-radius: 100px;
+    }
+
+    &--email {
+      margin-left: 32px;
+    }
+
+    &--enter {
+      margin-left: 98px;
+    }
+  }
+
+  .footer-menu__link-text {
+    display: inline;
+  }
+}

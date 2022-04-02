@@ -22,4 +22,14 @@ $(function () {
     $(this).parent().toggleClass('faq-list__item--open');
     $(this).next('.faq-list__answer').slideToggle('200');
   });
+
+  //кнопка "вниз":
+  const downArrowBtn = $('.header__scroll-btn'),
+        main = $('main');
+
+  downArrowBtn.on('click', function() {
+    $('html, body').animate({
+      scrollTop: main.offset().top
+    }, '200');
+  });
 })
