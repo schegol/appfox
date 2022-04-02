@@ -305,7 +305,7 @@ template, [hidden] {
 
 @font-face {
   font-family: "Playfair Display";
-  src: local("Playfair Display Black"), url("../fonts/PlayfairDisplay-Black") format("truetype");
+  src: local("Playfair Display Black"), url("../fonts/PlayfairDisplay-Black.ttf") format("truetype");
   font-weight: 900;
   font-display: swap; }
 
@@ -347,8 +347,14 @@ a {
   .heading--contact {
     margin-bottom: 15px;
     color: #414141;
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 13px; }
   .heading--reviews {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 10px;
     color: #fff; }
   .heading--faq {
@@ -357,22 +363,33 @@ a {
     color: #000; }
   .heading--delivery {
     max-width: 115px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     color: #fff;
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 120%; }
   .heading--platform {
     max-width: 175px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #000;
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 120%; }
   .heading--online {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     color: #fff;
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 120%; }
   .heading--download {
     margin-bottom: 11px;
     color: #0E283C;
     font-size: 13px; }
+
+.heading__icon--reviews {
+  margin-left: 10px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  transform: rotate(-0.55deg); }
 
 .heading__accent {
   color: #FF9C01; }
@@ -397,6 +414,7 @@ a {
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #fff;
+  text-transform: uppercase;
   border: none;
   border-radius: 8px;
   background-color: #F7620F; }
@@ -513,12 +531,13 @@ a {
   color: #e6e6e6; }
 
 .download {
-  padding: 30px 0 181px; }
+  padding: 30px 0 183px; }
 
 .download__text {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  line-height: 19.5px;
   color: #768C9B; }
 
 .download__menu {
@@ -539,7 +558,7 @@ a {
 
 .online {
   position: relative;
-  padding: 204px 0 20px;
+  padding: 204px 0 22px;
   background-color: #454080;
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +619,7 @@ a {
 
 .platform {
   position: relative;
-  padding: 30px 0 93px; }
+  padding: 30px 0 96px; }
   .platform::after {
     content: "";
     position: absolute;
@@ -624,7 +643,7 @@ a {
 
 .delivery {
   position: relative;
-  padding: 17px 0 23px;
+  padding: 17px 0 25px;
   background-image: linear-gradient(180deg, #FFAB00 -182.82%, #FFCD68 -100.25%, #FFAB00 54.78%, #FFAB00 95.73%); }
   .delivery::before {
     content: "";
@@ -718,7 +737,7 @@ a {
   overflow: hidden; }
 
 .reviews {
-  padding: 30px 0 39px;
+  padding: 24px 0 49px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -744,7 +763,7 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .slider__btn {
   transition: background-color 0.2s linear;
@@ -793,7 +812,7 @@ a {
 .slider__slide-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #fff;
   font-family: "Times New Roman", serif;
   font-style: italic;
@@ -815,13 +834,13 @@ a {
   align-items: center; }
 
 .contact {
-  padding: 26px 0; }
+  padding: 25px 0 26px; }
 
 .contact__form-desc {
   margin: 0;
   padding: 0;
   max-width: 185px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   color: #414141; }
 
 .form {

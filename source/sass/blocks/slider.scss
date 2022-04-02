@@ -4,7 +4,7 @@
 
 .slider__controls {
   @include dflex(nowrap, row, flex-start, flex-start);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .slider__btn {
@@ -69,7 +69,7 @@
 
 .slider__slide-text {
   @include reset;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #fff;
   font-family: $font-slider;
   font-style: italic;

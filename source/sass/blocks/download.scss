@@ -1,10 +1,11 @@
 .download {
-  padding: 30px 0 181px;
+  padding: 30px 0 183px;
 }
 
 .download__text {
   @include reset;
   margin-bottom: 10px;
+  line-height: 19.5px;
   color: $download-text-color;
 }
 
