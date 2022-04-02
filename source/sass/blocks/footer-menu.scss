@@ -89,11 +89,18 @@
     white-space: nowrap;
     background-position: left center;
 
+    &:hover,
+    &:focus {
+      color: darken(#fff, 10%);
+      outline: none;
+    }
+
     &--btn-hide-desktop {
       display: none;
     }
 
     &--btn-show-desktop {
+      @include transition(background-color);
       @include dflex(nowrap, row, center, center);
       width: auto;
       padding: 12px 25px;
@@ -105,6 +112,12 @@
       background-image: none;
       background-color: #fff;
       border-radius: 100px;
+
+      &:hover,
+      &:focus {
+        color: $header-footer-color;
+        background-color: darken(#fff, 10%);
+      }
     }
 
     &--email {

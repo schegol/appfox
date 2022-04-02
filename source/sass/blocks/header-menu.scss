@@ -93,7 +93,7 @@
 
     &:hover,
     &:focus {
-      color: darken(#fff, 5%);
+      color: darken(#fff, 10%);
       outline: none;
     }
 
@@ -115,7 +115,7 @@
       &:hover,
       &:focus {
         color: $header-footer-color;
-        background-color: darken(#fff, 5%);
+        background-color: darken(#fff, 10%);
       }
     }
 

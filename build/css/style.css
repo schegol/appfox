@@ -680,7 +680,7 @@ a {
     white-space: nowrap;
     background-position: left center; }
     .header-menu__link:hover, .header-menu__link:focus {
-      color: #f2f2f2;
+      color: #e6e6e6;
       outline: none; }
     .header-menu__link--btn-show-tablet, .header-menu__link--btn-show-desktop {
       transition: background-color 0.2s linear;
@@ -701,7 +701,7 @@ a {
       border-radius: 100px; }
       .header-menu__link--btn-show-tablet:hover, .header-menu__link--btn-show-tablet:focus, .header-menu__link--btn-show-desktop:hover, .header-menu__link--btn-show-desktop:focus {
         color: #FFAB00;
-        background-color: #f2f2f2; }
+        background-color: #e6e6e6; }
     .header-menu__link--email {
       margin-left: 30px; }
     .header-menu__link--enter {
@@ -744,6 +744,7 @@ a {
     outline: none; }
 
 .social__image {
+  transition: color 0.2s linear;
   color: #fff; }
 
 .social__link:hover .social__image,
@@ -1366,6 +1367,9 @@ a {
         background-image: url("../img/bg-reviews-1-desktop@2x.png"); } }
 
 @media (min-width: 1200px) {
+  .reviews__container {
+    position: relative;
+    z-index: 2; }
   .reviews__heading {
     max-width: 445px;
     margin-left: 570px; }
@@ -1664,9 +1668,13 @@ a {
     color: #fff;
     white-space: nowrap;
     background-position: left center; }
+    .footer-menu__link:hover, .footer-menu__link:focus {
+      color: #e6e6e6;
+      outline: none; }
     .footer-menu__link--btn-hide-desktop {
       display: none; }
     .footer-menu__link--btn-show-desktop {
+      transition: background-color 0.2s linear;
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -1682,6 +1690,9 @@ a {
       background-image: none;
       background-color: #fff;
       border-radius: 100px; }
+      .footer-menu__link--btn-show-desktop:hover, .footer-menu__link--btn-show-desktop:focus {
+        color: #FFAB00;
+        background-color: #e6e6e6; }
     .footer-menu__link--email {
       margin-left: 32px; }
     .footer-menu__link--enter {

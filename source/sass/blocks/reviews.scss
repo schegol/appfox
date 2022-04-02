@@ -72,6 +72,11 @@
     }
   }
 
+  .reviews__container {
+    position: relative;
+    z-index: 2;
+  }
+
   .reviews__heading {
     max-width: 445px;
     margin-left: 570px;

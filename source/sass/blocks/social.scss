@@ -21,6 +21,7 @@
 }
 
 .social__image {
+  @include transition(color);
   color: #fff;
 }
 
